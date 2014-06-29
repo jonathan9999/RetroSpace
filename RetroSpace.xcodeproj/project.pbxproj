@@ -26,6 +26,8 @@
 		0B1C28841960867900719771 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0B1C28821960867900719771 /* InfoPlist.strings */; };
 		0B1C28861960867900719771 /* RetroSpaceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B1C28851960867900719771 /* RetroSpaceTests.m */; };
 		0B1C28951960926700719771 /* Highscores.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B1C28941960926700719771 /* Highscores.m */; };
+		2E698F90196094FE0058BE1B /* Earth.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E698F8F196094FE0058BE1B /* Earth.png */; };
+		2E698F92196097000058BE1B /* cloubylogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E698F91196097000058BE1B /* cloubylogo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +67,8 @@
 		0B1C28851960867900719771 /* RetroSpaceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RetroSpaceTests.m; sourceTree = "<group>"; };
 		0B1C28931960926700719771 /* Highscores.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Highscores.h; sourceTree = "<group>"; };
 		0B1C28941960926700719771 /* Highscores.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Highscores.m; sourceTree = "<group>"; };
+		2E698F8F196094FE0058BE1B /* Earth.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Earth.png; sourceTree = "<group>"; };
+		2E698F91196097000058BE1B /* cloubylogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cloubylogo.png; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +177,8 @@
 		0B1C2890196089A400719771 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				2E698F91196097000058BE1B /* cloubylogo.png */,
+				2E698F8F196094FE0058BE1B /* Earth.png */,
 				0B1C28701960867800719771 /* Spaceship.png */,
 			);
 			name = Assets;
@@ -272,11 +278,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E698F90196094FE0058BE1B /* Earth.png in Resources */,
 				0B1C28711960867800719771 /* Spaceship.png in Resources */,
 				0B1C28731960867900719771 /* Images.xcassets in Resources */,
 				0B1C28691960867800719771 /* Main_iPad.storyboard in Resources */,
 				0B1C28661960867800719771 /* Main_iPhone.storyboard in Resources */,
 				0B1C285D1960867800719771 /* InfoPlist.strings in Resources */,
+				2E698F92196097000058BE1B /* cloubylogo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -516,6 +524,7 @@
 				0B1C288B1960867900719771 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0B1C288C1960867900719771 /* Build configuration list for PBXNativeTarget "RetroSpaceTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +533,7 @@
 				0B1C288E1960867900719771 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
