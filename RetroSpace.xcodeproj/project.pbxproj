@@ -143,7 +143,6 @@
 			children = (
 				0B1C28921960923300719771 /* Game */,
 				0B1C28911960921800719771 /* ViewControllers */,
-				0B1C2890196089A400719771 /* Assets */,
 				0B1C28611960867800719771 /* AppDelegate.h */,
 				0B1C28621960867800719771 /* AppDelegate.m */,
 				0B1C28931960926700719771 /* Highscores.h */,
@@ -216,6 +215,7 @@
 				0B1C289C1960A9A400719771 /* Planet.m */,
 				0B1C289E1960AA8100719771 /* ScoreLabel.h */,
 				0B1C289F1960AA8100719771 /* ScoreLabel.m */,
+				0B1C2890196089A400719771 /* Assets */,
 			);
 			name = Game;
 			sourceTree = "<group>";

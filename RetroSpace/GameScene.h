@@ -7,9 +7,10 @@
 //
 
 #import <SpriteKit/SpriteKit.h>
+#import "ScoreLabel.h"
 
 @interface GameScene : SKScene
 
-@property SKLabelNode *scoreLabel;
+@property ScoreLabel *scoreLabel;
 
 @end
