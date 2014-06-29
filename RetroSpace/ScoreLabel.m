@@ -30,7 +30,7 @@
 }
 
 -(void) updateText{
-    self.text = [@"" stringByAppendingString:[@(_score) stringValue]];
+    self.text = [@"Score: " stringByAppendingString:[@(_score) stringValue]];
 }
 
 -(void) drawInTopLeft:(CGRect)frame{
