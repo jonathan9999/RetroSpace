@@ -34,7 +34,8 @@
 }
 
 -(void) drawInTopLeft:(CGRect)frame{
-   self.position = CGPointMake(10,(CGRectGetHeight(frame) -CGRectGetHeight(frame)) - 10);
+    self.horizontalAlignmentMode = SKLabelHorizontalAlignmentModeLeft;
+   self.position = CGPointMake(10,(CGRectGetHeight(frame) -CGRectGetHeight(self.frame)) - 10);
 
 }
                  

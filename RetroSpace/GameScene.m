@@ -17,7 +17,6 @@
         self.backgroundColor = [SKColor colorWithRed:0 green:0 blue:0 alpha:1.0];
         
         _scoreLabel = [[ScoreLabel alloc] initWithFontNamed:@"Chalkduster"];
-        _scoreLabel.horizontalAlignmentMode = SKLabelHorizontalAlignmentModeLeft;
         _scoreLabel.fontSize = 20;
         [_scoreLabel drawInTopLeft: self.frame]; 
         _scoreLabel.color = [UIColor whiteColor];
