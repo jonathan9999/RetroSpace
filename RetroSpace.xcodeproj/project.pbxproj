@@ -29,6 +29,7 @@
 		0B1C2898196094EA00719771 /* LoadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B1C2897196094EA00719771 /* LoadingViewController.m */; };
 		0B1C289A19609B2B00719771 /* cloubylogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B1C289919609B2B00719771 /* cloubylogo.png */; };
 		2E698F90196094FE0058BE1B /* Earth.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E698F8F196094FE0058BE1B /* Earth.png */; };
+		2E698F941960AA6F0058BE1B /* Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E698F931960AA6F0058BE1B /* Logo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,7 @@
 		0B1C2897196094EA00719771 /* LoadingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadingViewController.m; sourceTree = "<group>"; };
 		0B1C289919609B2B00719771 /* cloubylogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cloubylogo.png; sourceTree = "<group>"; };
 		2E698F8F196094FE0058BE1B /* Earth.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Earth.png; sourceTree = "<group>"; };
+		2E698F931960AA6F0058BE1B /* Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +182,7 @@
 		0B1C2890196089A400719771 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				2E698F931960AA6F0058BE1B /* Logo.png */,
 				0B1C289919609B2B00719771 /* cloubylogo.png */,
 				2E698F8F196094FE0058BE1B /* Earth.png */,
 				0B1C28701960867800719771 /* Spaceship.png */,
@@ -287,6 +290,7 @@
 				2E698F90196094FE0058BE1B /* Earth.png in Resources */,
 				0B1C28711960867800719771 /* Spaceship.png in Resources */,
 				0B1C28731960867900719771 /* Images.xcassets in Resources */,
+				2E698F941960AA6F0058BE1B /* Logo.png in Resources */,
 				0B1C28691960867800719771 /* Main_iPad.storyboard in Resources */,
 				0B1C28661960867800719771 /* Main_iPhone.storyboard in Resources */,
 				0B1C285D1960867800719771 /* InfoPlist.strings in Resources */,
