@@ -7,7 +7,7 @@
 //
 
 #import "EnemyGenerator.h"
-#import "WorldObject.h"
+#import "Asteroid.h"
 
 
 @implementation EnemyGenerator
@@ -21,7 +21,7 @@
 }
 
 -(void) generateWithScene:(SKScene *) game {
-    WorldObject *enemy =[[WorldObject alloc] initWithImageNamed:@"Earth.png"];
+    WorldObject *enemy =[[Asteroid alloc] initWithImageNamed:@"Earth.png"];
     [enemy runAction:[SKAction moveTo:CGPointMake(480,120)duration:8.0f]];
     [game addChild:enemy];
     [_enemyList addObject:enemy];

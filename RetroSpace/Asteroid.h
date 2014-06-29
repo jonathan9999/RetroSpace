@@ -6,11 +6,8 @@
 //  Copyright (c) 2014 Clouby. All rights reserved.
 //
 
-#import <SpriteKit/SpriteKit.h>
+#import "WorldObject.h"
 
-@interface WorldObject : SKSpriteNode
+@interface Asteroid : WorldObject
 
--(BOOL) hitBy: (SKSpriteNode *) obj;
-
--(void) destroy; 
 @end
