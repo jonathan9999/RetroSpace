@@ -30,7 +30,7 @@
 }
 
 -(void) updateText{
-    self.text = [@"Score: " stringByAppendingString:[@(_score) stringValue]];
+    self.text = [@"" stringByAppendingString:[@(_score) stringValue]];
 }
                  
 @end
