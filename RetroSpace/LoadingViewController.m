@@ -17,9 +17,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    //[NSThread sleepForTimeInterval:2.0f];
-    [self performSegueWithIdentifier:@"loadToMain" sender:self];
+}
+
+-(void)viewDidAppear:(BOOL)animated{
+    [NSThread sleepForTimeInterval:2.0f];
+      [self performSegueWithIdentifier:@"loadToMain" sender:self];
 }
 
 - (void)didReceiveMemoryWarning
