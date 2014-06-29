@@ -1,0 +1,501 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0B1C28511960867800719771 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B1C28501960867800719771 /* Foundation.framework */; };
+		0B1C28531960867800719771 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B1C28521960867800719771 /* CoreGraphics.framework */; };
+		0B1C28551960867800719771 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B1C28541960867800719771 /* UIKit.framework */; };
+		0B1C28571960867800719771 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B1C28561960867800719771 /* SpriteKit.framework */; };
+		0B1C285D1960867800719771 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0B1C285B1960867800719771 /* InfoPlist.strings */; };
+		0B1C285F1960867800719771 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B1C285E1960867800719771 /* main.m */; };
+		0B1C28631960867800719771 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B1C28621960867800719771 /* AppDelegate.m */; };
+		0B1C28661960867800719771 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B1C28641960867800719771 /* Main_iPhone.storyboard */; };
+		0B1C28691960867800719771 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B1C28671960867800719771 /* Main_iPad.storyboard */; };
+		0B1C286C1960867800719771 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B1C286B1960867800719771 /* ViewController.m */; };
+		0B1C286F1960867800719771 /* MyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B1C286E1960867800719771 /* MyScene.m */; };
+		0B1C28711960867800719771 /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B1C28701960867800719771 /* Spaceship.png */; };
+		0B1C28731960867900719771 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B1C28721960867900719771 /* Images.xcassets */; };
+		0B1C287A1960867900719771 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B1C28791960867900719771 /* XCTest.framework */; };
+		0B1C287B1960867900719771 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B1C28501960867800719771 /* Foundation.framework */; };
+		0B1C287C1960867900719771 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B1C28541960867800719771 /* UIKit.framework */; };
+		0B1C28841960867900719771 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0B1C28821960867900719771 /* InfoPlist.strings */; };
+		0B1C28861960867900719771 /* RetroSpaceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B1C28851960867900719771 /* RetroSpaceTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0B1C287D1960867900719771 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0B1C28451960867800719771 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0B1C284C1960867800719771;
+			remoteInfo = RetroSpace;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0B1C284D1960867800719771 /* RetroSpace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RetroSpace.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B1C28501960867800719771 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0B1C28521960867800719771 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		0B1C28541960867800719771 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		0B1C28561960867800719771 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		0B1C285A1960867800719771 /* RetroSpace-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RetroSpace-Info.plist"; sourceTree = "<group>"; };
+		0B1C285C1960867800719771 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0B1C285E1960867800719771 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0B1C28601960867800719771 /* RetroSpace-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RetroSpace-Prefix.pch"; sourceTree = "<group>"; };
+		0B1C28611960867800719771 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0B1C28621960867800719771 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0B1C28651960867800719771 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		0B1C28681960867800719771 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		0B1C286A1960867800719771 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		0B1C286B1960867800719771 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		0B1C286D1960867800719771 /* MyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyScene.h; sourceTree = "<group>"; };
+		0B1C286E1960867800719771 /* MyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyScene.m; sourceTree = "<group>"; };
+		0B1C28701960867800719771 /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
+		0B1C28721960867900719771 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		0B1C28781960867900719771 /* RetroSpaceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RetroSpaceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B1C28791960867900719771 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		0B1C28811960867900719771 /* RetroSpaceTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RetroSpaceTests-Info.plist"; sourceTree = "<group>"; };
+		0B1C28831960867900719771 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0B1C28851960867900719771 /* RetroSpaceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RetroSpaceTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0B1C284A1960867800719771 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B1C28531960867800719771 /* CoreGraphics.framework in Frameworks */,
+				0B1C28551960867800719771 /* UIKit.framework in Frameworks */,
+				0B1C28571960867800719771 /* SpriteKit.framework in Frameworks */,
+				0B1C28511960867800719771 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B1C28751960867900719771 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B1C287A1960867900719771 /* XCTest.framework in Frameworks */,
+				0B1C287C1960867900719771 /* UIKit.framework in Frameworks */,
+				0B1C287B1960867900719771 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0B1C28441960867800719771 = {
+			isa = PBXGroup;
+			children = (
+				0B1C28581960867800719771 /* RetroSpace */,
+				0B1C287F1960867900719771 /* RetroSpaceTests */,
+				0B1C284F1960867800719771 /* Frameworks */,
+				0B1C284E1960867800719771 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0B1C284E1960867800719771 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0B1C284D1960867800719771 /* RetroSpace.app */,
+				0B1C28781960867900719771 /* RetroSpaceTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0B1C284F1960867800719771 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0B1C28501960867800719771 /* Foundation.framework */,
+				0B1C28521960867800719771 /* CoreGraphics.framework */,
+				0B1C28541960867800719771 /* UIKit.framework */,
+				0B1C28561960867800719771 /* SpriteKit.framework */,
+				0B1C28791960867900719771 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0B1C28581960867800719771 /* RetroSpace */ = {
+			isa = PBXGroup;
+			children = (
+				0B1C28611960867800719771 /* AppDelegate.h */,
+				0B1C28621960867800719771 /* AppDelegate.m */,
+				0B1C28641960867800719771 /* Main_iPhone.storyboard */,
+				0B1C28671960867800719771 /* Main_iPad.storyboard */,
+				0B1C286A1960867800719771 /* ViewController.h */,
+				0B1C286B1960867800719771 /* ViewController.m */,
+				0B1C286D1960867800719771 /* MyScene.h */,
+				0B1C286E1960867800719771 /* MyScene.m */,
+				0B1C28701960867800719771 /* Spaceship.png */,
+				0B1C28721960867900719771 /* Images.xcassets */,
+				0B1C28591960867800719771 /* Supporting Files */,
+			);
+			path = RetroSpace;
+			sourceTree = "<group>";
+		};
+		0B1C28591960867800719771 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0B1C285A1960867800719771 /* RetroSpace-Info.plist */,
+				0B1C285B1960867800719771 /* InfoPlist.strings */,
+				0B1C285E1960867800719771 /* main.m */,
+				0B1C28601960867800719771 /* RetroSpace-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0B1C287F1960867900719771 /* RetroSpaceTests */ = {
+			isa = PBXGroup;
+			children = (
+				0B1C28851960867900719771 /* RetroSpaceTests.m */,
+				0B1C28801960867900719771 /* Supporting Files */,
+			);
+			path = RetroSpaceTests;
+			sourceTree = "<group>";
+		};
+		0B1C28801960867900719771 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0B1C28811960867900719771 /* RetroSpaceTests-Info.plist */,
+				0B1C28821960867900719771 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0B1C284C1960867800719771 /* RetroSpace */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0B1C28891960867900719771 /* Build configuration list for PBXNativeTarget "RetroSpace" */;
+			buildPhases = (
+				0B1C28491960867800719771 /* Sources */,
+				0B1C284A1960867800719771 /* Frameworks */,
+				0B1C284B1960867800719771 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RetroSpace;
+			productName = RetroSpace;
+			productReference = 0B1C284D1960867800719771 /* RetroSpace.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0B1C28771960867900719771 /* RetroSpaceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0B1C288C1960867900719771 /* Build configuration list for PBXNativeTarget "RetroSpaceTests" */;
+			buildPhases = (
+				0B1C28741960867900719771 /* Sources */,
+				0B1C28751960867900719771 /* Frameworks */,
+				0B1C28761960867900719771 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0B1C287E1960867900719771 /* PBXTargetDependency */,
+			);
+			name = RetroSpaceTests;
+			productName = RetroSpaceTests;
+			productReference = 0B1C28781960867900719771 /* RetroSpaceTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0B1C28451960867800719771 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Clouby;
+				TargetAttributes = {
+					0B1C28771960867900719771 = {
+						TestTargetID = 0B1C284C1960867800719771;
+					};
+				};
+			};
+			buildConfigurationList = 0B1C28481960867800719771 /* Build configuration list for PBXProject "RetroSpace" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0B1C28441960867800719771;
+			productRefGroup = 0B1C284E1960867800719771 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0B1C284C1960867800719771 /* RetroSpace */,
+				0B1C28771960867900719771 /* RetroSpaceTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0B1C284B1960867800719771 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B1C28711960867800719771 /* Spaceship.png in Resources */,
+				0B1C28731960867900719771 /* Images.xcassets in Resources */,
+				0B1C28691960867800719771 /* Main_iPad.storyboard in Resources */,
+				0B1C28661960867800719771 /* Main_iPhone.storyboard in Resources */,
+				0B1C285D1960867800719771 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B1C28761960867900719771 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B1C28841960867900719771 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0B1C28491960867800719771 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B1C286F1960867800719771 /* MyScene.m in Sources */,
+				0B1C286C1960867800719771 /* ViewController.m in Sources */,
+				0B1C28631960867800719771 /* AppDelegate.m in Sources */,
+				0B1C285F1960867800719771 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B1C28741960867900719771 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B1C28861960867900719771 /* RetroSpaceTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0B1C287E1960867900719771 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0B1C284C1960867800719771 /* RetroSpace */;
+			targetProxy = 0B1C287D1960867900719771 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0B1C285B1960867800719771 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0B1C285C1960867800719771 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0B1C28641960867800719771 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0B1C28651960867800719771 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		0B1C28671960867800719771 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0B1C28681960867800719771 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		0B1C28821960867900719771 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0B1C28831960867900719771 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0B1C28871960867900719771 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0B1C28881960867900719771 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0B1C288A1960867900719771 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RetroSpace/RetroSpace-Prefix.pch";
+				INFOPLIST_FILE = "RetroSpace/RetroSpace-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		0B1C288B1960867900719771 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RetroSpace/RetroSpace-Prefix.pch";
+				INFOPLIST_FILE = "RetroSpace/RetroSpace-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		0B1C288D1960867900719771 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RetroSpace.app/RetroSpace";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RetroSpace/RetroSpace-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "RetroSpaceTests/RetroSpaceTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		0B1C288E1960867900719771 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RetroSpace.app/RetroSpace";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RetroSpace/RetroSpace-Prefix.pch";
+				INFOPLIST_FILE = "RetroSpaceTests/RetroSpaceTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0B1C28481960867800719771 /* Build configuration list for PBXProject "RetroSpace" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B1C28871960867900719771 /* Debug */,
+				0B1C28881960867900719771 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0B1C28891960867900719771 /* Build configuration list for PBXNativeTarget "RetroSpace" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B1C288A1960867900719771 /* Debug */,
+				0B1C288B1960867900719771 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		0B1C288C1960867900719771 /* Build configuration list for PBXNativeTarget "RetroSpaceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B1C288D1960867900719771 /* Debug */,
+				0B1C288E1960867900719771 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0B1C28451960867800719771 /* Project object */;
+}
