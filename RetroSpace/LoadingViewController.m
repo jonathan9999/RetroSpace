@@ -18,7 +18,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    [NSThread sleepForTimeInterval:2.0f];
+    //[NSThread sleepForTimeInterval:2.0f];
     [self performSegueWithIdentifier:@"loadToMain" sender:self];
 }
 
