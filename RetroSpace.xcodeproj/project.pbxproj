@@ -32,6 +32,8 @@
 		0B1C28A01960AA8100719771 /* ScoreLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B1C289F1960AA8100719771 /* ScoreLabel.m */; };
 		2E698F90196094FE0058BE1B /* Earth.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E698F8F196094FE0058BE1B /* Earth.png */; };
 		2E698F941960AA6F0058BE1B /* Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E698F931960AA6F0058BE1B /* Logo.png */; };
+		2E698F961960AD0B0058BE1B /* Play.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E698F951960AD0B0058BE1B /* Play.png */; };
+		2E698F981960AD770058BE1B /* Scores.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E698F971960AD770058BE1B /* Scores.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +82,8 @@
 		0B1C289F1960AA8100719771 /* ScoreLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScoreLabel.m; sourceTree = "<group>"; };
 		2E698F8F196094FE0058BE1B /* Earth.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Earth.png; sourceTree = "<group>"; };
 		2E698F931960AA6F0058BE1B /* Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo.png; sourceTree = "<group>"; };
+		2E698F951960AD0B0058BE1B /* Play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Play.png; sourceTree = "<group>"; };
+		2E698F971960AD770058BE1B /* Scores.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Scores.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,6 +191,8 @@
 		0B1C2890196089A400719771 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				2E698F971960AD770058BE1B /* Scores.png */,
+				2E698F951960AD0B0058BE1B /* Play.png */,
 				2E698F931960AA6F0058BE1B /* Logo.png */,
 				0B1C289919609B2B00719771 /* cloubylogo.png */,
 				2E698F8F196094FE0058BE1B /* Earth.png */,
@@ -296,6 +302,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E698F981960AD770058BE1B /* Scores.png in Resources */,
+				2E698F961960AD0B0058BE1B /* Play.png in Resources */,
 				0B1C289A19609B2B00719771 /* cloubylogo.png in Resources */,
 				2E698F90196094FE0058BE1B /* Earth.png in Resources */,
 				0B1C28711960867800719771 /* Spaceship.png in Resources */,
