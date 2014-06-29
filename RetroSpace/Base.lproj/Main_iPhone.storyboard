@@ -74,7 +74,17 @@
                     <view key="view" contentMode="scaleToFill" id="Tot-1U-K1Q">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloubylogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="ORg-89-fEc">
+                                <rect key="frame" x="-80" y="124" width="480" height="320"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="0.78972128629141947" green="0.3883671395349923" blue="0.85050621811224492" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="ORg-89-fEc" secondAttribute="centerX" id="7n5-wk-pla"/>
+                            <constraint firstAttribute="centerY" secondItem="ORg-89-fEc" secondAttribute="centerY" id="IsM-9C-hc1"/>
+                        </constraints>
                     </view>
                     <connections>
                         <segue destination="uKt-9b-5k8" kind="modal" identifier="loadToMain" animates="NO" id="IVJ-8a-ptd"/>
@@ -115,6 +125,9 @@
             <point key="canvasLocation" x="451" y="254"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="cloubylogo.png" width="480" height="320"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <nil key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
