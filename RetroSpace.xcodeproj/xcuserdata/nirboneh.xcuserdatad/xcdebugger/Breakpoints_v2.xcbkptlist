@@ -9,14 +9,12 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "RetroSpace/WorldObject.m"
-            timestampString = "425769940.436396"
+            filePath = "../../../../../../var/folders/x8/jrl3v8h53zxcqr4q5sb38klm0000gp/T/XcodeMergeSession-b10a399e010a13ff4b5bdc0e2bf62c66644b9baf/MergeDocument-GameScene.m"
+            timestampString = "425770104.169161"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "21"
-            endingLineNumber = "21"
-            landmarkName = "-initWithImageNamed:"
-            landmarkType = "5">
+            startingLineNumber = "14"
+            endingLineNumber = "14">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

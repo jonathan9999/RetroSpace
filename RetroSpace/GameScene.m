@@ -21,6 +21,7 @@
         [_scoreLabel drawInTopLeft: self.frame]; 
         _scoreLabel.color = [UIColor whiteColor];
         
+        _enemyGenerator  = [[EnemyGenerator alloc] init];
         [self addChild:_scoreLabel];
     }
     return self;
@@ -28,8 +29,9 @@
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     /* Called when a touch begins */
+    [_enemyGenerator generateWithScene:self];
     [_scoreLabel incScore:1];
-}
+} 
 
 -(void)update:(CFTimeInterval)currentTime {
     /* Called before each frame is rendered */

@@ -10,4 +10,5 @@
 
 @interface WorldObject : SKSpriteNode
 
+-(void) destroy; 
 @end
