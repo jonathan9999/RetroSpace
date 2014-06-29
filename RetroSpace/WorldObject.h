@@ -8,7 +8,6 @@
 
 #import <SpriteKit/SpriteKit.h>
 
-@interface Asteroid : SKSpriteNode
+@interface WorldObject : SKSpriteNode
 
--(void) destroy;
 @end

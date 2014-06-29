@@ -6,9 +6,14 @@
 //  Copyright (c) 2014 Clouby. All rights reserved.
 //
 
-#import "Asteroid.h"
+#import "WorldObject.h"
+@interface WorldObject()
+//-(void) destroy
+@end
 
-@implementation Asteroid
+@implementation WorldObject{
+//    -(void) destroy;
+}
 
 
 -(id) initWithImageNamed:(NSString *)name
@@ -20,8 +25,5 @@
     return self;
 }
 
--(void) destroy{
-    
-}
 
 @end
