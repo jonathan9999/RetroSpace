@@ -63,10 +63,10 @@
             </objects>
             <point key="canvasLocation" x="27" y="-86"/>
         </scene>
-        <!--View Controller-->
+        <!--Loading View Controller-->
         <scene sceneID="UuV-PY-wfZ">
             <objects>
-                <viewController id="YTb-fJ-iIR" sceneMemberID="viewController">
+                <viewController id="YTb-fJ-iIR" customClass="LoadingViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="C44-Ak-eSy"/>
                         <viewControllerLayoutGuide type="bottom" id="rzS-6W-Vyr"/>
@@ -74,15 +74,15 @@
                     <view key="view" contentMode="scaleToFill" id="Tot-1U-K1Q">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.78972128629141947" green="0.3883671395349923" blue="0.85050621811224492" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <connections>
-                        <segue destination="uKt-9b-5k8" kind="modal" animates="NO" id="IVJ-8a-ptd"/>
+                        <segue destination="uKt-9b-5k8" kind="modal" identifier="loadToMain" animates="NO" id="IVJ-8a-ptd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G1L-k5-Ka0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-381" y="-583"/>
+            <point key="canvasLocation" x="-347" y="-632"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="8y8-ZF-Ivp">
