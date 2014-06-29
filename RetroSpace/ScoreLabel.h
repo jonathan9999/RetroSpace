@@ -11,6 +11,7 @@
 @interface ScoreLabel : SKLabelNode
 
 @property int score;
--(void) incScore:(int) append;
+
+-(void) incScore:(int) inc;
 
 @end

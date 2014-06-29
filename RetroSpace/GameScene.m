@@ -16,34 +16,21 @@
         
         self.backgroundColor = [SKColor colorWithRed:0 green:0 blue:0 alpha:1.0];
         
-        SKLabelNode *myLabel = [ScoreLabel labelNodeWithFontNamed:@"Chalkduster"];
+        _scoreLabel = [[ScoreLabel alloc] initWithFontNamed:@"Chalkduster"];
+        _scoreLabel.horizontalAlignmentMode = SKLabelHorizontalAlignmentModeLeft;
+        _scoreLabel.fontSize = 20;
+        _scoreLabel.position = CGPointMake(10,
+                                      ( CGRectGetHeight(self.frame) -CGRectGetHeight( _scoreLabel.frame)) - 10);
+        _scoreLabel.color = [UIColor whiteColor];
         
-        myLabel.text = @"Score";
-        myLabel.fontSize = 30;
-        myLabel.position = CGPointMake(CGRectGetMidX(self.frame),
-                                       CGRectGetMidY(self.frame));
-        
-        [self addChild:myLabel];
+        [self addChild:_scoreLabel];
     }
     return self;
 }
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     /* Called when a touch begins */
-    
-    for (UITouch *touch in touches) {
-        CGPoint location = [touch locationInNode:self];
-        
-        SKSpriteNode *sprite = [SKSpriteNode spriteNodeWithImageNamed:@"Spaceship"];
-        
-        sprite.position = location;
-        
-        SKAction *action = [SKAction rotateByAngle:M_PI duration:1];
-        
-        [sprite runAction:[SKAction repeatActionForever:action]];
-        
-        [self addChild:sprite];
-    }
+    [_scoreLabel incScore:1];
 }
 
 -(void)update:(CFTimeInterval)currentTime {
