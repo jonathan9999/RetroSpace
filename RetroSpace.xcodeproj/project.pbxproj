@@ -28,6 +28,8 @@
 		0B1C28951960926700719771 /* Highscores.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B1C28941960926700719771 /* Highscores.m */; };
 		0B1C2898196094EA00719771 /* LoadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B1C2897196094EA00719771 /* LoadingViewController.m */; };
 		0B1C289A19609B2B00719771 /* cloubylogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B1C289919609B2B00719771 /* cloubylogo.png */; };
+		0B1C289D1960A9A400719771 /* Planet.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B1C289C1960A9A400719771 /* Planet.m */; };
+		0B1C28A01960AA8100719771 /* ScoreLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B1C289F1960AA8100719771 /* ScoreLabel.m */; };
 		2E698F90196094FE0058BE1B /* Earth.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E698F8F196094FE0058BE1B /* Earth.png */; };
 /* End PBXBuildFile section */
 
@@ -71,6 +73,10 @@
 		0B1C2896196094EA00719771 /* LoadingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadingViewController.h; sourceTree = "<group>"; };
 		0B1C2897196094EA00719771 /* LoadingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadingViewController.m; sourceTree = "<group>"; };
 		0B1C289919609B2B00719771 /* cloubylogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cloubylogo.png; sourceTree = "<group>"; };
+		0B1C289B1960A9A400719771 /* Planet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Planet.h; sourceTree = "<group>"; };
+		0B1C289C1960A9A400719771 /* Planet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Planet.m; sourceTree = "<group>"; };
+		0B1C289E1960AA8100719771 /* ScoreLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScoreLabel.h; sourceTree = "<group>"; };
+		0B1C289F1960AA8100719771 /* ScoreLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScoreLabel.m; sourceTree = "<group>"; };
 		2E698F8F196094FE0058BE1B /* Earth.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Earth.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -203,6 +209,10 @@
 			children = (
 				0B1C286D1960867800719771 /* GameScene.h */,
 				0B1C286E1960867800719771 /* GameScene.m */,
+				0B1C289B1960A9A400719771 /* Planet.h */,
+				0B1C289C1960A9A400719771 /* Planet.m */,
+				0B1C289E1960AA8100719771 /* ScoreLabel.h */,
+				0B1C289F1960AA8100719771 /* ScoreLabel.m */,
 			);
 			name = Game;
 			sourceTree = "<group>";
@@ -309,7 +319,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0B1C286F1960867800719771 /* GameScene.m in Sources */,
+				0B1C289D1960A9A400719771 /* Planet.m in Sources */,
 				0B1C2898196094EA00719771 /* LoadingViewController.m in Sources */,
+				0B1C28A01960AA8100719771 /* ScoreLabel.m in Sources */,
 				0B1C286C1960867800719771 /* GameViewController.m in Sources */,
 				0B1C28951960926700719771 /* Highscores.m in Sources */,
 				0B1C28631960867800719771 /* AppDelegate.m in Sources */,
