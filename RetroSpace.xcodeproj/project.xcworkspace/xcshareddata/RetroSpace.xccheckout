@@ -5,34 +5,34 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>3A6D675C-6A90-442B-87D3-E6E77E04EBB2</string>
+	<string>8F0ECBBA-B30D-437E-967E-60FC875CB09D</string>
 	<key>IDESourceControlProjectName</key>
 	<string>RetroSpace</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>E88F3299-8537-4027-BBFE-CE2CE8559FCB</key>
-		<string>https://github.com/nboneh/RetroSpace.git</string>
+		<key>B03D9265-187F-4345-A232-88B21B6953C6</key>
+		<string>https://github.com/nboneh/RetroSpace</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>RetroSpace.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>E88F3299-8537-4027-BBFE-CE2CE8559FCB</key>
+		<key>B03D9265-187F-4345-A232-88B21B6953C6</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/nboneh/RetroSpace.git</string>
+	<string>https://github.com/nboneh/RetroSpace</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>E88F3299-8537-4027-BBFE-CE2CE8559FCB</string>
+	<string>B03D9265-187F-4345-A232-88B21B6953C6</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>E88F3299-8537-4027-BBFE-CE2CE8559FCB</string>
+			<string>B03D9265-187F-4345-A232-88B21B6953C6</string>
 			<key>IDESourceControlWCCName</key>
 			<string>RetroSpace</string>
 		</dict>
