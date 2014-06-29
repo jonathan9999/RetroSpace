@@ -6,10 +6,10 @@
 //  Copyright (c) 2014 Clouby. All rights reserved.
 //
 
-#import "ViewController.h"
-#import "MyScene.h"
+#import "GameViewController.h"
+#import "GameScene.h"
 
-@implementation ViewController
+@implementation GameViewController
 
 - (void)viewDidLoad
 {
@@ -21,7 +21,7 @@
     skView.showsNodeCount = YES;
     
     // Create and configure the scene.
-    SKScene * scene = [MyScene sceneWithSize:skView.bounds.size];
+    SKScene * scene = [GameScene sceneWithSize:skView.bounds.size];
     scene.scaleMode = SKSceneScaleModeAspectFill;
     
     // Present the scene.
@@ -30,17 +30,9 @@
 
 - (BOOL)shouldAutorotate
 {
-    return YES;
+    return NO;
 }
 
-- (NSUInteger)supportedInterfaceOrientations
-{
-    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
-        return UIInterfaceOrientationMaskAllButUpsideDown;
-    } else {
-        return UIInterfaceOrientationMaskAll;
-    }
-}
 
 - (void)didReceiveMemoryWarning
 {

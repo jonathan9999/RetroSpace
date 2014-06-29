@@ -16,8 +16,8 @@
 		0B1C28631960867800719771 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B1C28621960867800719771 /* AppDelegate.m */; };
 		0B1C28661960867800719771 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B1C28641960867800719771 /* Main_iPhone.storyboard */; };
 		0B1C28691960867800719771 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B1C28671960867800719771 /* Main_iPad.storyboard */; };
-		0B1C286C1960867800719771 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B1C286B1960867800719771 /* ViewController.m */; };
-		0B1C286F1960867800719771 /* MyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B1C286E1960867800719771 /* MyScene.m */; };
+		0B1C286C1960867800719771 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B1C286B1960867800719771 /* GameViewController.m */; };
+		0B1C286F1960867800719771 /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B1C286E1960867800719771 /* GameScene.m */; };
 		0B1C28711960867800719771 /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B1C28701960867800719771 /* Spaceship.png */; };
 		0B1C28731960867900719771 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B1C28721960867900719771 /* Images.xcassets */; };
 		0B1C287A1960867900719771 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B1C28791960867900719771 /* XCTest.framework */; };
@@ -25,6 +25,7 @@
 		0B1C287C1960867900719771 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B1C28541960867800719771 /* UIKit.framework */; };
 		0B1C28841960867900719771 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0B1C28821960867900719771 /* InfoPlist.strings */; };
 		0B1C28861960867900719771 /* RetroSpaceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B1C28851960867900719771 /* RetroSpaceTests.m */; };
+		0B1C28951960926700719771 /* Highscores.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B1C28941960926700719771 /* Highscores.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,10 +52,10 @@
 		0B1C28621960867800719771 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		0B1C28651960867800719771 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		0B1C28681960867800719771 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		0B1C286A1960867800719771 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		0B1C286B1960867800719771 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		0B1C286D1960867800719771 /* MyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyScene.h; sourceTree = "<group>"; };
-		0B1C286E1960867800719771 /* MyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyScene.m; sourceTree = "<group>"; };
+		0B1C286A1960867800719771 /* GameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
+		0B1C286B1960867800719771 /* GameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
+		0B1C286D1960867800719771 /* GameScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameScene.h; sourceTree = "<group>"; };
+		0B1C286E1960867800719771 /* GameScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameScene.m; sourceTree = "<group>"; };
 		0B1C28701960867800719771 /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
 		0B1C28721960867900719771 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		0B1C28781960867900719771 /* RetroSpaceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RetroSpaceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -62,6 +63,8 @@
 		0B1C28811960867900719771 /* RetroSpaceTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RetroSpaceTests-Info.plist"; sourceTree = "<group>"; };
 		0B1C28831960867900719771 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0B1C28851960867900719771 /* RetroSpaceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RetroSpaceTests.m; sourceTree = "<group>"; };
+		0B1C28931960926700719771 /* Highscores.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Highscores.h; sourceTree = "<group>"; };
+		0B1C28941960926700719771 /* Highscores.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Highscores.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,15 +126,15 @@
 		0B1C28581960867800719771 /* RetroSpace */ = {
 			isa = PBXGroup;
 			children = (
+				0B1C28921960923300719771 /* Game */,
+				0B1C28911960921800719771 /* ViewControllers */,
+				0B1C2890196089A400719771 /* Assets */,
 				0B1C28611960867800719771 /* AppDelegate.h */,
 				0B1C28621960867800719771 /* AppDelegate.m */,
+				0B1C28931960926700719771 /* Highscores.h */,
+				0B1C28941960926700719771 /* Highscores.m */,
 				0B1C28641960867800719771 /* Main_iPhone.storyboard */,
 				0B1C28671960867800719771 /* Main_iPad.storyboard */,
-				0B1C286A1960867800719771 /* ViewController.h */,
-				0B1C286B1960867800719771 /* ViewController.m */,
-				0B1C286D1960867800719771 /* MyScene.h */,
-				0B1C286E1960867800719771 /* MyScene.m */,
-				0B1C28701960867800719771 /* Spaceship.png */,
 				0B1C28721960867900719771 /* Images.xcassets */,
 				0B1C28591960867800719771 /* Supporting Files */,
 			);
@@ -165,6 +168,32 @@
 				0B1C28821960867900719771 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0B1C2890196089A400719771 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				0B1C28701960867800719771 /* Spaceship.png */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		0B1C28911960921800719771 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0B1C286A1960867800719771 /* GameViewController.h */,
+				0B1C286B1960867800719771 /* GameViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		0B1C28921960923300719771 /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				0B1C286D1960867800719771 /* GameScene.h */,
+				0B1C286E1960867800719771 /* GameScene.m */,
+			);
+			name = Game;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,8 +295,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B1C286F1960867800719771 /* MyScene.m in Sources */,
-				0B1C286C1960867800719771 /* ViewController.m in Sources */,
+				0B1C286F1960867800719771 /* GameScene.m in Sources */,
+				0B1C286C1960867800719771 /* GameViewController.m in Sources */,
+				0B1C28951960926700719771 /* Highscores.m in Sources */,
 				0B1C28631960867800719771 /* AppDelegate.m in Sources */,
 				0B1C285F1960867800719771 /* main.m in Sources */,
 			);

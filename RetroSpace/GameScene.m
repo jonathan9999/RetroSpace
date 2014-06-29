@@ -6,9 +6,9 @@
 //  Copyright (c) 2014 Clouby. All rights reserved.
 //
 
-#import "MyScene.h"
+#import "GameScene.h"
 
-@implementation MyScene
+@implementation GameScene
 
 -(id)initWithSize:(CGSize)size {    
     if (self = [super initWithSize:size]) {
