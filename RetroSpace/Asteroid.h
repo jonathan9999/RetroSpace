@@ -1,5 +1,5 @@
 //
-//  ScoreLabel.h
+//  Asteroid.h
 //  RetroSpace
 //
 //  Created by Nir Boneh on 6/29/14.
@@ -8,11 +8,7 @@
 
 #import <SpriteKit/SpriteKit.h>
 
-@interface ScoreLabel : SKLabelNode
+@interface Asteroid : SKSpriteNode
 
-@property int score;
-
--(void) incScore:(int) inc;
--(void) drawInTopLeft:(CGRect)frame;
-
+-(void) destroy;
 @end

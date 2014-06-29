@@ -19,8 +19,7 @@
         _scoreLabel = [[ScoreLabel alloc] initWithFontNamed:@"Chalkduster"];
         _scoreLabel.horizontalAlignmentMode = SKLabelHorizontalAlignmentModeLeft;
         _scoreLabel.fontSize = 20;
-        _scoreLabel.position = CGPointMake(10,
-                                      ( CGRectGetHeight(self.frame) -CGRectGetHeight( _scoreLabel.frame)) - 10);
+        [_scoreLabel drawInTopLeft: self.frame]; 
         _scoreLabel.color = [UIColor whiteColor];
         
         [self addChild:_scoreLabel];
