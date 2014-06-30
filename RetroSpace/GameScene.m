@@ -21,7 +21,7 @@
         [_scoreLabel drawInTopLeft: self.frame]; 
         _scoreLabel.color = [UIColor whiteColor];
         _lastCurrentTime = CACurrentMediaTime();
-        _enemyGenerator  = [[EnemyGenerator alloc] init];
+        _enemyGenerator  = [[EnemyGenerator alloc] initWithScene:self];
               [self addChild:_scoreLabel];
     }
     return self;
