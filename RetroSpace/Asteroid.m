@@ -6,15 +6,8 @@
 //  Copyright (c) 2014 Clouby. All rights reserved.
 //
 
-#import <SpriteKit/SpriteKit.h>
-#import "WorldObject.h"
+#import "Asteroid.h"
 
-@implementation WorldObject
-
--(void) destroy{
-[self runAction:[SKAction fadeAlphaTo:0.0f
-                             duration:5.0f]];
-    [self finalize];
-}
+@implementation Asteroid
 
 @end
