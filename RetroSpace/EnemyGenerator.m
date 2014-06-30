@@ -12,19 +12,11 @@
 
 @implementation EnemyGenerator
 
--(id) init{
-    self = [super init];
-    if(self){
-        _enemyList = [[NSMutableArray alloc] initWithCapacity:BUFFER_SIZE];
-    }
-    return self;
-}
-
--(void) generateWithScene:(SKScene *) game {
+-(WorldObject *) generate {
     WorldObject *enemy =[[Asteroid alloc] initWithImageNamed:@"Earth.png"];
-    [enemy runAction:[SKAction moveTo:CGPointMake(480,120)duration:8.0f]];
-    [game addChild:enemy];
-    [_enemyList addObject:enemy];
+    [enemy setSpeed: 1];
+    [enemy runAction:[SKAction repeatActionForever:[SKAction moveBy:CGVectorMake(100, 100) duration:1]]];
+    return enemy;
 }
 -(void) hitBy: (SKSpriteNode *) obj{
 

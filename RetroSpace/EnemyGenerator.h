@@ -8,13 +8,10 @@
 
 #import <Foundation/Foundation.h>
 #import <SpriteKit/SpriteKit.h>
-#define BUFFER_SIZE 10
+#import "WorldObject.h"
 
 @interface EnemyGenerator : NSObject
 
-@property NSMutableArray *enemyList;
-
--(void) generateWithScene:(SKScene *) game ;
--(void) hitBy: (SKSpriteNode *) obj;
+-(WorldObject *)generate;
 
 @end

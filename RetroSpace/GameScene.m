@@ -20,8 +20,10 @@
         _scoreLabel.fontSize = 20;
         [_scoreLabel drawInTopLeft: self.frame]; 
         _scoreLabel.color = [UIColor whiteColor];
-        
+        _lastCurrentTime = CACurrentMediaTime();
         _enemyGenerator  = [[EnemyGenerator alloc] init];
+        _generateTime = 2.0f;
+        _generateTicCounter = 0.0f;
         [self addChild:_scoreLabel];
     }
     return self;
@@ -29,12 +31,21 @@
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     /* Called when a touch begins */
-    [_enemyGenerator generateWithScene:self];
+    
     [_scoreLabel incScore:1];
 } 
 
 -(void)update:(CFTimeInterval)currentTime {
     /* Called before each frame is rendered */
+    CFTimeInterval deltaTime = (currentTime - _lastCurrentTime);
+    _generateTicCounter += deltaTime;
+    if(_generateTicCounter > _generateTime){
+        WorldObject *randEnemy = [_enemyGenerator generate];
+        [self addChild:randEnemy];
+        _generateTicCounter -= _generateTime;
+    }
+     _lastCurrentTime = currentTime;
+
 }
 
 @end
