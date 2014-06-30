@@ -19,6 +19,6 @@
 
 -(id) initWithScene:(SKScene *)gameScene;
 -(void)update:(CFTimeInterval)deltaTime;
--(void) hitBy: (SKSpriteNode *) obj;
+-(int) hitBy: (SKSpriteNode *) obj;
 
 @end

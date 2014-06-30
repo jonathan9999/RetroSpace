@@ -33,7 +33,14 @@
         _generateTicCounter -= _generateTime;
     }
 }
--(void) hitBy: (SKSpriteNode *) obj{
-    
+-(int) hitBy: (SKSpriteNode *) obj{
+    int hitNum= 0;
+    int length = [_enemies count];
+    for(int i = 0; i < length; i++){
+        WorldObject* enemy = _enemies[i];
+        if([enemy hitBy: obj])
+            hitNum++;
+    }
+    return hitNum;
 }
 @end

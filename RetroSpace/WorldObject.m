@@ -21,8 +21,7 @@
 
 -(void) destroy{
 [self runAction:[SKAction fadeAlphaTo:0.0f
-                             duration:5.0f]];
-    [self finalize];
+                             duration:.5f]];
 }
 
 @end

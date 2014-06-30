@@ -29,8 +29,15 @@
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     /* Called when a touch begins */
-    
-    [_scoreLabel incScore:1];
+    int inc = 0;
+    for(UITouch* touch in touches){
+        SKSpriteNode *fingerSprite = [[SKSpriteNode alloc] initWithColor:[UIColor redColor] size:CGSizeMake(20,20)];
+        fingerSprite.position = CGPointMake([touch locationInNode: self].x, [touch locationInNode: self].y);
+        [self addChild: fingerSprite];
+        inc = [_enemyGenerator hitBy: fingerSprite];
+        [fingerSprite removeFromParent];
+    }
+    [_scoreLabel incScore:inc];
 } 
 
 -(void)update:(CFTimeInterval)currentTime {
