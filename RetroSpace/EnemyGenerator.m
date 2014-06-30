@@ -27,6 +27,6 @@
     [_enemyList addObject:enemy];
 }
 -(void) hitBy: (SKSpriteNode *) obj{
-    
+
 }
 @end
