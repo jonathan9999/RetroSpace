@@ -12,6 +12,13 @@
 
 @interface EnemyGenerator : NSObject
 
--(WorldObject *)generate;
+@property NSMutableArray *enemies;
+@property SKScene *gameScene;
+@property float generateTime;
+@property float generateTicCounter;
+
+-(id) initWithScene:(SKScene *)gameScene;
+-(void)update:(CFTimeInterval)deltaTime;
+-(void) hitBy: (SKSpriteNode *) obj;
 
 @end

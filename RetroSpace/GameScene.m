@@ -22,9 +22,7 @@
         _scoreLabel.color = [UIColor whiteColor];
         _lastCurrentTime = CACurrentMediaTime();
         _enemyGenerator  = [[EnemyGenerator alloc] init];
-        _generateTime = 2.0f;
-        _generateTicCounter = 0.0f;
-        [self addChild:_scoreLabel];
+              [self addChild:_scoreLabel];
     }
     return self;
 }
@@ -38,12 +36,7 @@
 -(void)update:(CFTimeInterval)currentTime {
     /* Called before each frame is rendered */
     CFTimeInterval deltaTime = (currentTime - _lastCurrentTime);
-    _generateTicCounter += deltaTime;
-    if(_generateTicCounter > _generateTime){
-        WorldObject *randEnemy = [_enemyGenerator generate];
-        [self addChild:randEnemy];
-        _generateTicCounter -= _generateTime;
-    }
+    [_enemyGenerator update:deltaTime];
      _lastCurrentTime = currentTime;
 
 }
